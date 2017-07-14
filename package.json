@@ -1,26 +1,37 @@
 {
-  "name": "PLUGIN_NAME",
+  "name": "postcss-css-grid-ie",
   "version": "0.0.0",
-  "description": "PostCSS plugin PLUGIN_DESC",
+  "description": "PostCSS plugin for automatically adding -ms equivalent properties for CSS grids to support IE10+",
   "keywords": [
     "postcss",
     "css",
-    "postcss-plugin"KEYWORDS
+    "postcss-plugin",
+    "grid",
+    "css-grid",
+    "IE",
+    "IE10",
+    "IE11",
+    "EDGE",
+    "grid-column",
+    "grid-row",
+    "-ms-grid-columns",
+    "-ms-grid-rows"
   ],
-  "author": "AUTHOR_NAME <AUTHOR_EMAIL>",
+  "author": "Gregg B. Jensen",
   "license": "MIT",
-  "repository": "GITHUB_NAME/PLUGIN_NAME",
+  "repository": "greggbjensen/postcss-css-grid-ie",
   "bugs": {
-    "url": "https://github.com/GITHUB_NAME/PLUGIN_NAME/issues"
+    "url": "https://github.com/greggbjensen/postcss-css-grid-ie/issues"
   },
-  "homepage": "https://github.com/GITHUB_NAME/PLUGIN_NAME",
+  "homepage": "https://github.com/greggbjensen/postcss-css-grid-ie",
   "dependencies": {
     "postcss": "^6.0.1"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-postcss": "^2.0.2",
-    "jest": "^20.0.0"
+    "jest": "^20.0.0",
+    "jest-cli": "^20.0.4"
   },
   "scripts": {
     "test": "jest && eslint *.js"
