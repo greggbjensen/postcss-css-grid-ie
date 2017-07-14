@@ -6,6 +6,8 @@
 [ci-img]:  https://travis-ci.org/greggbjensen/postcss-css-grid-ie.svg
 [ci]:      https://travis-ci.org/greggbjensen/postcss-css-grid-ie
 
+### Input example
+
 ```css
 .container {
     display: grid;
@@ -14,6 +16,8 @@
 
     grid-rows: 2fr auto;  
 }
+
+### Output example
 
 .container-item { 
     grid-column: 2 / 3;
