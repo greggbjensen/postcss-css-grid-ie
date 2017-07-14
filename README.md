@@ -17,8 +17,6 @@
     grid-rows: 2fr auto;  
 }
 
-### Output example
-
 .container-item { 
     grid-column: 2 / 3;
 
@@ -29,6 +27,8 @@
     justify-self: start;
 }
 ```
+
+### Output example
 
 ```css
 .container {
