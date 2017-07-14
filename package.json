@@ -1,6 +1,6 @@
 {
   "name": "postcss-css-grid-ie",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PostCSS plugin for automatically adding -ms equivalent properties for CSS grids to support IE10+",
   "keywords": [
     "postcss",
