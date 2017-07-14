@@ -17,6 +17,14 @@ module.exports = postcss.plugin('postcss-css-grid-ie', function () {
         decl.cloneAfter({ prop: `-ms-${decl.prop}` });
     }
 
+    function processAlignSelf(decl) {
+        decl.cloneAfter({ prop: '-ms-grid-row-align' });
+    }
+
+    function processJustifySelf(decl) {
+        decl.cloneAfter({ prop: '-ms-grid-column-align' });
+    }
+
     function processGridColumnRow(decl, rule, columnRow) {
         const match = columnRowValueRegEx.exec(decl.value);
         if (match) {
@@ -52,6 +60,12 @@ module.exports = postcss.plugin('postcss-css-grid-ie', function () {
                     break;
                 case 'grid-row':
                     processGridColumnRow(decl, rule, 'row');
+                    break;
+                case 'align-self':
+                    processAlignSelf(decl);
+                    break;
+                case 'justify-self':
+                    processJustifySelf(decl);
                     break;
                 default:
                     // Do nothing.

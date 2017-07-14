@@ -73,5 +73,29 @@ describe('postcss-css-grid-ie', () => {
                 -ms-grid-row-span: 1;
             }`, { });
     });
+
+    it('adds -ms-grid-row-align', () => {
+        return run(
+            `.container-item { 
+                align-self: end;
+            }`,
+
+            `.container-item { 
+                align-self: end; 
+                -ms-grid-row-align: end;
+            }`, { });
+    });
+
+    it('adds -ms-grid-column-align', () => {
+        return run(
+            `.container-item { 
+                justify-self: start;
+            }`,
+
+            `.container-item { 
+                justify-self: start; 
+                -ms-grid-column-align: start;
+            }`, { });
+    });
 });
 
